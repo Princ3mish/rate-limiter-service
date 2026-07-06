@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  rate-limiter-app:
+    build: .
+    container_name: rate-limiter-playground
+    ports:
+      - "8080:8080"
+    environment:
+      - JAVA_OPTS=-Xmx512m
